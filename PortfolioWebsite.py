@@ -14,5 +14,9 @@ def aboutme():
 def contact():
 	return render_template("contact.html")
 
+@app.route("/game") 
+def game():
+	return render_template("index3.html")
+
 if __name__ == "__main__":
 	app.run(debug=True)
