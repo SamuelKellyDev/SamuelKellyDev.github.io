@@ -16,7 +16,7 @@ def contact():
 
 @app.route("/game") 
 def game():
-	return render_template("1/index.html")
+	return render_template("index3.html")
 
 if __name__ == "__main__":
 	app.run(debug=True)
