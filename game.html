@@ -10,7 +10,7 @@
     <script src="Build/UnityLoader.js"></script>
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Cubie.json", {onProgress: UnityProgress});
-      var storeValue = 0;
+      var storeValue = 1;
     </script>
   </head>
   <body>
@@ -24,10 +24,14 @@
     </div>
     <script>
       document.getElementById('mutebutton').onclick = function() {
-        if (storeValue != 0) 
-          unityInstance.SendMessage('AudioController', 'ChangeVolume', 0)
-        else
-          unityInstance.SendMessage('AudioController', 'ChangeVolume', 1.0)
+        if (storeValue != 0) { 
+          storeValue = 0;
+          unityInstance.SendMessage('AudioController', 'ChangeVolume', 0);
+        }
+        else {
+          storeValue = 1;
+          unityInstance.SendMessage('AudioController', 'ChangeVolume', 1.0);
+        }
       };
     </script>
   </body>
