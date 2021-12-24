@@ -66,12 +66,13 @@
 		        document.getElementById('button').onclick = function() {
 		        	if (document.getElementById('button').value == "Show") {
 		        		let iframe = document.createElement('iframe');
+		        		let gameSection = document.getElementById('gameSection');
 						iframe.id = 'game';
 						iframe.src = 'https://samuelkellydev.github.io/game';
 						iframe.width = '1000';
 						iframe.height = '1000';
 						iframe.title = 'Cubie';
-						document.(document.getElementById('gameSection')).appendChild(iframe);
+						document.gameSection.appendChild(iframe);
 		        		document.getElementById('button').value = "Hide";
 		        	}
 					else {
