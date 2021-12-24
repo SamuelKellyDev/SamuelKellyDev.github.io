@@ -63,7 +63,6 @@
 				</a>
 			</div>
 			<script>
-
 		        document.getElementById('button').onclick = function() {
 		        	if (document.getElementById('button').value == "Show") {
 		        		let iframe = document.createElement('iframe');
@@ -72,10 +71,8 @@
 						iframe.width = '1000';
 						iframe.height = '1000';
 						iframe.title = 'Cubie';
-						iframe.style = 'display: none;';
 						document.(document.getElementById('gameSection')).appendChild(iframe);
 		        		document.getElementById('button').value = "Hide";
-						document.getElementById('game').style.display = "block";
 		        	}
 					else {
 						document.getElementById('button').value = "Show";
