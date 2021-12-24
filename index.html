@@ -76,6 +76,7 @@
 		        		document.getElementById('button').value = "Hide";
 		        	}
 					else {
+						let iframe = document.getElementById('game');
 						iframe.remove();
 						document.getElementById('button').value = "Show";
 						document.getElementById('game').style.display = "none";
