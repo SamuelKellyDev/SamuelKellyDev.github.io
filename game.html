@@ -24,6 +24,7 @@
       </div>
     </div>
     <script>
+      unityInstance.SendMessage('AudioController', 'ChangeVolume', 0);
       document.getElementById('mutebutton').onclick = function() {
         if (storeValue != 0) { 
           storeValue = 0;
