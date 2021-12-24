@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-
+# Flask is entirely for back-end, it doesn't replace JavaScript. 
 app = Flask(__name__)
 # TextArea tag defines a multi-line text input control. The textarea element is often used in a form to collect user inputs like comments or reviews.
 @app.route("/")
