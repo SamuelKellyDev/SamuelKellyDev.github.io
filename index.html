@@ -63,6 +63,7 @@
 						<p style="width: 500px;">
 							Description: WebApp that does basic stock analysis in real-time using the polygon.io API and Flask (python-based backend). Utilizes a SQL database for user storage. Allows users to add/delete stocks from their account for tracking purposes. Displays broad market stats such as top gainers, top losers, etc. Provides basic stats for user's analysis.
 						</p>
+						<a href="https://sckdev.pythonanywhere.com/" target="_blank">Project Website</a></li>
 						<a href="https://github.com/sck-dev/StockAnalysis" target="_blank">Github Repository</a></li>
 					</div>
 				</div>
@@ -91,43 +92,7 @@
 				</div>
 			</ul>		
 		</div>
-		<div class="container-fluid" style="color:white; background-image: url('Sprite-0001.png'); height: 800px; background-size:cover; background-repeat: no-repeat; color: darkorange; border: none;">
-			<ul style="width: 80%; font-size: 1vw;">
-				<div style="display: flex; justify-content: space-between; width: 100%; padding: 10px; top: 50%;">
-					<div>
-					<li><h4>Cubie</h4></li>
-					<ul>
-						<li id="gameSection">
-							Game:<input id="gameButton" type="submit" name="submit_button" value="Show">
-							<br>
-						</li>
-					</ul>
-					</div>
-					<div style="margin: 145px;">
-						<li style="width: 500px; font-size: 1vw;">Description: Platformer game made in Unity and written in C#. The cube continously moves forward as the player has to move side-to-side to avoid obstacles while also jumping from platform to platform. Uses a finite state machine to change player states depending on recent collisions. Utilizes object-oriented programming to allow for interaction with obstacles.  Randomizes AI movement of obstacles within a set range. Added mute/unmute functionality built into this website as well as dynamic creation of the view.</li>
-						<li><a href="https://github.com/sck-dev/Cubie" target="_blank">Github Repository</a></li>
-					</ul>
-			</ul>		
-		</div>
 			<script>
-		        document.getElementById('gameButton').onclick = function() {
-		        	if (document.getElementById('gameButton').value == "Show") {
-		        		let iframe = document.createElement('iframe');
-		        		let gameSection = document.getElementById('gameSection');
-						iframe.id = 'game';
-						iframe.src = 'https://sck-dev.github.io/game';
-						iframe.width = '1000';
-						iframe.height = '700';
-						iframe.title = 'Cubie';
-						gameSection.appendChild(iframe);
-		        		document.getElementById('gameButton').value = "Hide";
-		        	}
-					else {
-						let iframe = document.getElementById('game');
-						iframe.remove();
-						document.getElementById('gameButton').value = "Show";
-					}
-				};
 				document.getElementById('imageButton').onclick = function() {
 		        	if (document.getElementById('imageButton').value == "Show") {
 		        		document.getElementById('imageButton').value = "Hide";
