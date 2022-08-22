@@ -6,7 +6,7 @@ body {
 
 .bgimage {
     height:100vh;
-    background: url(images/orig.gif);
+    background: url(orig.gif);
     background-size:cover;
     position:relative;
 }
@@ -42,7 +42,7 @@ section{
     scroll-snap-align: start;
 }
 .one {
-    background: url(images/orig.gif) center/cover no-repeat;
+    background: url(orig.gif) center/cover no-repeat;
 }
 
 h1{
