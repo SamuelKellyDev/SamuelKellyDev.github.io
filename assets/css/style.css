@@ -41,9 +41,6 @@ section{
     justify-content: center;
     scroll-snap-align: start;
 }
-.one {
-    background: url(assets/img/orig.gif) center/cover no-repeat;
-}
 
 h1{
     font-size: 150px;
