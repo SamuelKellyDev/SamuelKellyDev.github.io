@@ -4,13 +4,6 @@ body {
     font-family: sans-serif;
 }
 
-.bgimage {
-    height:100vh;
-    background: url(assets/img/orig.gif);
-    background-size:cover;
-    position:relative;
-}
-
 h1,h2,h3,h4,h5,h6 {
     margin-top: 0;
     margin-bottom: .5rem
@@ -21,16 +14,12 @@ p {
     margin-bottom: 1rem
 }
 
-
 .wrapper {
     width: 100vw;
     height: 100vh;
 
     overflow-y:scroll;
     scroll-snap-type: y mandatory;
-}
-.content {
-    max-width: 800px;
 }
 
 section{
@@ -90,13 +79,4 @@ h2{
 .about_desc {
     font-size: 2rem;
     color: white;
-}
-/* about section image css */
-.imageAboutPage {
-}
-
-#about {
-}
-#contact {
-    padding-bottom: 4rem;
 }
